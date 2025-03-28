@@ -1,0 +1,11 @@
+C4Context
+title System Context diagram for Internet Banking System
+
+Person(Administrador, "Administrador", "Supervisiona o funcionamento")
+Person(Teacher, "Professor","Publica as aulas")
+Person(Student, "Aluno","Assiste às aulas")
+System(System, "Sistema Educacional", "Permite o Aluno acesse a aula, o Professor publique a aula e o Administrador supervisione")
+
+Rel(Administrador, System,"Supervisionar")
+Rel(Teacher, System,"Criar,Editar e Publicar")
+Rel(Student, System,"Visualizar e Responder")
